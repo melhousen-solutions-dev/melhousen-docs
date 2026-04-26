@@ -26,11 +26,6 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
-  icon:
-    repo: fontawesome/brands/github
-
-repo_url: https://github.com/melhousen-solutions-dev/melhousen-docs
-repo_name: melhousen-docs
 
 nav:
   - Home: index.md
