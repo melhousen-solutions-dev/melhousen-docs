@@ -1,0 +1,76 @@
+site_name: Melhousen Docs
+site_url: https://docs.melhousensolutions.com
+site_description: Official documentation for Melhousen Solutions products
+site_author: Melhousen Solutions
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/melhousen-solutions-dev/melhousen-docs
+repo_name: melhousen-docs
+
+nav:
+  - Home: index.md
+  - FowyldAI:
+    - Overview: fowyldai/index.md
+    - Quickstart:
+      - Get Started: fowyldai/quickstart/index.md
+    - Concepts:
+      - Architecture: fowyldai/concepts/index.md
+    - How-To Guides:
+      - Admin & Configuration: fowyldai/how-to/index.md
+    - Reference:
+      - API & Config: fowyldai/reference/index.md
+    - Troubleshooting: fowyldai/troubleshooting/index.md
+  - TallawahCore:
+    - Overview: tallawah/index.md
+  - ConsoleSentinel:
+    - Overview: consolesentinel/index.md
+  - ImaraForge:
+    - Overview: imaraforge/index.md
+  - SunSeedsKitchen:
+    - Overview: sunseedskitchen/index.md
+  - FowyldLabs:
+    - Overview: fowyldlabs/index.md
+  - HelmcortOS:
+    - Overview: helmcortos/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
